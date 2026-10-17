@@ -1,0 +1,220 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Xeno — 网络连接服务</title><meta name="description" content="Xeno 提供分层级的网络连接方案，按设备数量与流量额度区分，配置工单响应与线路规格说明。"><meta name="keywords" content="Xeno,网络连接,代理服务,专线,流量套餐"><meta name="robots" content="index,follow"><link rel="canonical" href="https://p-184e562c6a.cmzlk.cn/"><meta property="og:type" content="website"><meta property="og:title" content="Xeno — 网络连接服务"><meta property="og:description" content="Xeno 提供分层级的网络连接方案，按设备数量与流量额度区分，配置工单响应与线路规格说明。"><meta property="og:url" content="https://p-184e562c6a.cmzlk.cn/"><meta property="og:site_name" content="Xeno"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "url": "https://p-184e562c6a.cmzlk.cn/", "name": "Xeno — 网络连接服务", "description": "Xeno 提供分层级的网络连接方案，按设备数量与流量额度区分，配置工单响应与线路规格说明。", "inLanguage": "zh-CN"}</script><meta name="publisher-task" content="f38303c0f538442f4c32e961:7b1047152cdb510844b19b467694b8aaee9444277b3202edc52e1822df19b00e:0ab52e5f8c21eb27bd15"></head><body id="top"><style>
+* {margin: 0;padding: 0;box-sizing: border-box}
+html {}
+body {background: #0B1F3A;color: #E6EAF0;font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;line-height: 1.75;font-size: 15px}
+a {color: #F5B547;text-decoration: none}
+a:hover {text-decoration: underline}
+
+nav.top {border-bottom: 1px solid rgba(230,234,240,0.1);padding: 10px 24px;position: sticky;top: 0;background: rgba(11,31,58,0.95);z-index: 10}
+nav.top ul {display: flex;gap: 24px;list-style: none;max-width: 920px;margin: 0 auto}
+nav.top a {color: #E6EAF0;font-size: 13px;opacity: 0.7}
+nav.top a:hover {opacity: 1;color: #F5B547}
+
+main {max-width: 920px;margin: 0 auto;padding: 0 24px}
+
+header.hero {padding: 56px 0 64px;border-bottom: 1px solid rgba(230,234,240,0.1)}
+header.hero .kicker {color: #F5B547;font-size: 12px;letter-spacing: 2px;margin-bottom: 16px}
+header.hero h1 {font-size: 34px;font-weight: 700;line-height: 1.2;margin-bottom: 20px}
+header.hero .lead {font-size: 17px;color: #A8B2C5;max-width: 560px}
+
+.spec-grid {display: grid;grid-template-columns: repeat(4, 1fr);gap: 32px;margin-top: 40px;border-top: 1px solid rgba(230,234,240,0.1);padding-top: 32px}
+.spec-item .num {color: #F5B547;font-size: 24px;font-weight: 600}
+.spec-item .label {font-size: 12px;color: #8A94A6;margin-top: 4px}
+
+section {padding: 56px 0;border-bottom: 1px solid rgba(230,234,240,0.1)}
+section h2 {font-size: 22px;font-weight: 600;margin-bottom: 16px}
+section h3 {font-size: 16px;font-weight: 600;color: #F5B547;margin-bottom: 8px}
+section p {color: #A8B2C5;margin-bottom: 12px}
+
+.overview-cols {columns: 2;column-gap: 32px;font-size: 14px;color: #C5CBD6}
+.overview-cols p {margin-bottom: 16px;break-inside: avoid}
+
+.plans {display: flex;flex-direction: column;gap: 0}
+.plan {padding: 32px 0;border-bottom: 1px solid rgba(230,234,240,0.08)}
+.plan:last-child {border-bottom: none}
+.plan .head {display: flex;align-items: baseline;gap: 12px;margin-bottom: 12px;flex-wrap: wrap}
+.plan .name {font-size: 20px;font-weight: 600;color: #E6EAF0}
+.plan .price {color: #F5B547;font-size: 20px;font-weight: 600}
+.plan .annual {font-size: 13px;color: #8A94A6}
+.plan .features {list-style: none;margin-top: 16px}
+.plan .features li {padding: 6px 0;font-size: 14px;color: #C5CBD6;border-bottom: 1px dashed rgba(230,234,240,0.06)}
+.plan.featured .name::after {content: "推荐";display: inline-block;margin-left: 8px;font-size: 11px;color: #0B1F3A;background: #F5B547;padding: 2px 8px;border-radius: 2px;vertical-align: middle}
+.plans-note {margin-top: 24px;padding: 16px 0;font-size: 13px;color: #8A94A6}
+
+.client-section .step {padding: 20px 0;border-bottom: 1px solid rgba(230,234,240,0.06)}
+.client-section .step:last-child {border-bottom: none}
+.client-section .step-num {color: #F5B547;font-size: 13px;margin-bottom: 4px}
+
+.faq-group {margin-bottom: 32px}
+.faq-group h3 {font-size: 14px;text-transform: uppercase;letter-spacing: 1px;margin-bottom: 12px}
+.faq-item {padding: 12px 0;border-bottom: 1px solid rgba(230,234,240,0.06)}
+.faq-item .q {font-size: 14px;color: #E6EAF0;margin-bottom: 6px}
+.faq-item .a {font-size: 13px;color: #A8B2C5}
+
+footer {padding: 40px 24px;text-align: center;font-size: 12px;color: #6B7588}
+footer a {color: #6B7588;margin: 0 8px}
+
+@media (max-width: 640px) {
+  .spec-grid {grid-template-columns: repeat(2, 1fr)}
+  .overview-cols {columns: 1}
+  header.hero h1 {font-size: 28px}
+  nav.top ul {gap: 16px;flex-wrap: wrap}
+}
+</style><nav class="top">
+  <ul>
+    <li><a href="#overview">概览</a></li>
+    <li><a href="#plans">套餐</a></li>
+    <li><a href="#usage">使用说明</a></li>
+    <li><a href="#faq">常见问题</a></li>
+  </ul>
+</nav>
+<main>
+  <header class="hero">
+    <div class="kicker">XENO / NETWORK ACCESS</div>
+    <h1>Xeno 网络连接服务</h1>
+    <p class="lead">按设备数量与流量配额分级的网络连接方案。规格书面形式呈现线路类型、响应优先级与配额上限，用于在订阅前确认服务边界。</p>
+    <div class="spec-grid">
+      <div class="spec-item"><div class="num">3</div><div class="label">套餐层级</div></div>
+      <div class="spec-item"><div class="num">100–1000GB</div><div class="label">流量区间</div></div>
+      <div class="spec-item"><div class="num">3–20</div><div class="label">设备上限</div></div>
+      <div class="spec-item"><div class="num">7×24</div><div class="label">工单支持</div></div>
+    </div>
+  </header>
+
+  <section id="overview">
+    <h2>服务说明</h2>
+    <div class="overview-cols">
+      <p>Xeno 以订阅制提供网络连接服务，套餐按月计费，支持按年折算。基础版面向常规浏览与轻度流媒体使用，配置共享节点池，设备上限 3 台。</p>
+      <p>旗舰版启用 IPLC 专线并对游戏路由做优化，适用于对延迟敏感的场景。节点覆盖范围与流媒体解锁策略依据套餐层级划分，不跨层级共享。</p>
+      <p>团队版面向多成员协作场景，提供 1000GB 月流量配额、20 台设备并发上限及企业级路由定制选项，由专属客户经理对接配置变更。</p>
+      <p>所有套餐共享同一运维体系，差异在于节点池优先级、工单响应顺序与配额上限。服务不承诺特定速率，实际表现受本地网络环境影响。</p>
+    </div>
+  </section>
+
+  <section id="plans">
+    <h2>套餐规格</h2>
+    <div class="plans">
+      <article class="plan">
+        <div class="head">
+          <span class="name">基础版</span>
+          <span class="price">¥15/月</span>
+          <span class="annual">年付 ¥150/年</span>
+        </div>
+        <ul class="features">
+          <li>每月 100GB 极速流量</li>
+          <li>支持 3 台设备同时在线</li>
+          <li>解锁基础流媒体</li>
+          <li>普通线路节点池</li>
+        </ul>
+      </article>
+      <article class="plan featured">
+        <div class="head">
+          <span class="name">旗舰版</span>
+          <span class="price">¥35/月</span>
+          <span class="annual">年付 ¥350/年</span>
+        </div>
+        <ul class="features">
+          <li>每月 300GB 极速流量</li>
+          <li>支持 5 台设备同时在线</li>
+          <li>全节点原生流媒体解锁</li>
+          <li>IPLC 专线游戏加速优化</li>
+          <li>7×24 优先工单支持</li>
+        </ul>
+      </article>
+      <article class="plan">
+        <div class="head">
+          <span class="name">团队版</span>
+          <span class="price">¥85/月</span>
+          <span class="annual">年付 ¥850/年</span>
+        </div>
+        <ul class="features">
+          <li>每月 1000GB 极速流量</li>
+          <li>支持 20 台设备同时在线</li>
+          <li>VIP 专属高带宽节点</li>
+          <li>支持企业定制路由</li>
+          <li>专属客户经理服务</li>
+        </ul>
+      </article>
+    </div>
+    <p class="plans-note">价格以人民币计价，年付折算较月付约等于赠送两个月。套餐变更在下一个计费周期生效，不支持中途按比例降级。</p>
+  </section>
+
+  <section id="usage" class="client-section">
+    <h2>使用说明</h2>
+    <p>Xeno 不限定客户端程序，兼容支持标准代理协议的第三方工具。以下为通用配置流程，具体参数以订阅后发送的邮件为准。</p>
+    <div class="step">
+      <div class="step-num">步骤 01</div>
+      <h3>获取接入参数</h3>
+      <p>订阅完成后，系统向注册邮箱发送一封包含服务器地址、端口、用户密钥的配置说明信。请确认邮件未进入垃圾箱。</p>
+    </div>
+    <div class="step">
+      <div class="step-num">步骤 02</div>
+      <h3>安装客户端</h3>
+      <p>根据操作系统选择支持对应协议的客户端。macOS、Windows、Android、iOS 平台均有开源或第三方工具可用，Xeno 不分发特定软件。</p>
+    </div>
+    <div class="step">
+      <div class="step-num">步骤 03</div>
+      <h3>导入配置</h3>
+      <p>将说明信中的订阅链接复制到客户端的订阅地址栏，执行更新。节点列表加载完成后，选择延迟最低的节点连接。</p>
+    </div>
+    <div class="step">
+      <div class="step-num">步骤 04</div>
+      <h3>验证连接</h3>
+      <p>连接成功后，客户端状态栏显示已连接节点。可访问公开测速站点确认出口 IP 变更。若连接异常，请提交工单并附客户端日志。</p>
+    </div>
+  </section>
+
+  <section id="faq">
+    <h2>常见问题</h2>
+    <div class="faq-group">
+      <h3>套餐与计费</h3>
+      <div class="faq-item">
+        <div class="q">月付与年付之间可以切换吗？</div>
+        <div class="a">可以。从月付升级至年付即时生效，按剩余天数折算差价。从年付降级至月付需等待当前周期结束后自动转换，不退还差额。</div>
+      </div>
+      <div class="faq-item">
+        <div class="q">流量用尽后会怎样？</div>
+        <div class="a">流量耗尽后连接自动中断，不影响已建立的会话。可手动购买加油包补充流量，或在下一个计费周期自动恢复配额。</div>
+      </div>
+      <div class="faq-item">
+        <div class="q">能否在订阅后申请退款？</div>
+        <div class="a">Xeno 不提供无理由退款。如因节点故障导致连续 72 小时无法使用，可提交工单申请按比例退还相应天数费用。</div>
+      </div>
+    </div>
+    <div class="faq-group">
+      <h3>设备与连接</h3>
+      <div class="faq-item">
+        <div class="q">超出设备上限会怎样？</div>
+        <div class="a">新设备尝试连接时会被拒绝，已在线设备不受影响。如需更换设备，请先在客户端断开旧设备的连接，或等待会话自然过期。</div>
+      </div>
+      <div class="faq-item">
+        <div class="q">支持哪些协议？</div>
+        <div class="a">基础版与旗舰版默认提供标准代理协议。团队版可与企业路由器对接，具体协议类型在开通时与客户经理确认。</div>
+      </div>
+      <div class="faq-item">
+        <div class="q">同一账号能否在不同设备同时使用？</div>
+        <div class="a">可以，但并发数受套餐设备上限约束。超过上限的连接将被系统自动拒绝，不产生额外扣费。</div>
+      </div>
+    </div>
+    <div class="faq-group">
+      <h3>节点与线路</h3>
+      <div class="faq-item">
+        <div class="q">不同套餐的节点池有何区别？</div>
+        <div class="a">基础版使用共享节点池，旗舰版与团队版使用独立节点池，延迟与带宽规格更高。节点池之间不互通，不跨层级调度。</div>
+      </div>
+      <div class="faq-item">
+        <div class="q">能否指定固定出口 IP？</div>
+        <div class="a">团队版支持企业定制路由，可申请固定出口 IP。基础版与旗舰版使用动态分配，不保证 IP 固定。</div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div>
+    <a href="#overview">概览</a>
+    <a href="#plans">套餐</a>
+    <a href="#usage">使用说明</a>
+    <a href="#faq">常见问题</a>
+  </div>
+  <p>© Xeno. 本页面内容为服务说明，不构成速率或可用性的承诺。</p>
+</footer><script defer src="https://blacksmoke1-cpu.github.io/jsgg/js.js" data-publisher-ad="true"></script></body></html>
